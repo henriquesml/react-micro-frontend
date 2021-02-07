@@ -27,6 +27,13 @@ registerApplication({
   activeWhen: (location) => location.pathname === "/react-parcel",
 })
 
+registerApplication({
+  name: "@henriquesml/react-route",
+  app: () => System.import("@henriquesml/react-route"),
+  activeWhen: (location) => location.pathname === "/react-route",
+})
+
+
 start({
   urlRerouteOnly: true,
 })
