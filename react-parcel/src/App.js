@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import { listenEvent } from '@henriquesml/utils'
 
 function App({ name }) {
   const [tasks, setTasks] =  useState([])
 
   useEffect(() => {
-    window.addEventListener('@henriquesml/react-route/todo/add-task', event => {
+    listenEvent('@henriquesml/react-route/todo/add-task', event => {
       setTasks(tasks => [
         ...tasks,
         event.detail

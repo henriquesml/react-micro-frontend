@@ -33,7 +33,6 @@ registerApplication({
   activeWhen: (location) => location.pathname === "/react-route",
 })
 
-
 start({
   urlRerouteOnly: true,
 })
