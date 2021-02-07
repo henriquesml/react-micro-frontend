@@ -18,7 +18,7 @@ registerApplication({
 registerApplication({
   name: "@henriquesml/react-multiples",
   app: () => System.import("@henriquesml/react-multiples"),
-  activeWhen: (location) => location.pathname === "/react-multiples",
+  activeWhen: ["/react-multiples"],
 });
 
 start({
